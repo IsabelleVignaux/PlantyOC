@@ -1,0 +1,63 @@
+/* CSS pour page COMMANDER */
+.commander-background-color {
+    background-color: #3B8E46;
+}
+
+/* On fait disparaitre le bouton 'add to cart' */
+.button.single_add_to_cart_button.button.alt{
+    display: none;
+}
+
+/* On ajoute une ligne de separation horizontale */
+.commander-border{
+    color: white;
+    padding-bottom: 30px;
+    border-bottom: 2px solid;
+}
+
+/* Formulaire sur 2 colonnes */
+.formulaire-commande{
+    background-color: #3B8E46;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulaire-2-col{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.formulaire-2-col label{
+    min-width: 0;
+}
+
+#ligne-cf7{
+    border-radius: 30px;
+}
+
+/* Ajout séparation blanche entre les 2 colonnes du formulaire */
+.col-gauche{
+    padding-right: 20px;
+    border-right: 2px solid;
+}
+
+form.wpcf7-form input,
+form.wpcf7-form select,
+form.wpcf7-form textarea {
+    border: 1px solid #ececed;
+    border-radius: 30px;
+    background: #3B8E46;
+}
+
+@media (max-width:560px){
+    /* Page COMMANDER : 
+    on remet le formulaire en colonnes
+    pour les smartphones */
+    .formulaire-2-col{
+        flex-direction: column;
+    }
+}
