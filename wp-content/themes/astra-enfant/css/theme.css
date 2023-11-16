@@ -1,3 +1,11 @@
+body {
+    width : 100%;
+    margin-top: 0;
+    }
+
+/* CSS pour page ACCUEIL */
+
+
 /* CSS pour page COMMANDER */
 .commander-background-color {
     background-color: #3B8E46;
@@ -40,17 +48,62 @@
 }
 
 /* Ajout séparation blanche entre les 2 colonnes du formulaire */
-.col-gauche{
-    padding-right: 20px;
-    border-right: 2px solid;
+.col-droite{
+    border-left: 2px solid;
+    padding-left: 30px;
 }
 
+/*
 form.wpcf7-form input,
 form.wpcf7-form select,
 form.wpcf7-form textarea {
     border: 1px solid #ececed;
     border-radius: 30px;
     background: #3B8E46;
+}
+*/
+
+/* CSS pour page RENCONTRER */
+.rencontrer-background-color{
+    background-color: #e3d9d0;
+}
+.rencontrer-background-1 {
+    background-color: #3B8E46;
+}
+
+.border-2{
+    height: 60px;
+    width: 100%;
+    background-color: #E3D9D0;
+    border-radius: 0 0 80% 80%;
+    /*
+    box-shadow: 0 10px 0 #dcd5cf;
+    */
+}
+.border-3 {
+    border-radius: 50% / 0% 0% 15% 15%;
+}
+.border-4{
+    border-radius: 50% / 0% 0% 3% 3%;
+}
+
+.position{
+    position: relative;
+    max-width: 640px;
+}
+
+.rencontrer-background{
+    position: absolute;
+    right: 53%;
+    bottom: 10%;
+}
+.formulaire-rencontrer{
+    background-color: #e3d9d0;
+    color: black;
+}
+.formulaire-rencontrer h3{
+    text-align: center;
+    color: black;
 }
 
 @media (max-width:560px){
