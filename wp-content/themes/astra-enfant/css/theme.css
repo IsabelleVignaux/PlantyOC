@@ -3,17 +3,7 @@
 body * {
     font-family: 'Syne', sans-serif;
 }
-/* Menu header ********************************************/
-/*
-#menu-header-menu #menu-item-257 a {
-    color:#f0f;
-  }
-#ast-hf-menu-1 #menu-item-238 a {
-    color:rgb(246, 255, 0);
-  }
-*/
-/**********************************************/
-/* Menu ***************************************/
+/* Menu **************************************/
 /* Effet hover sur lien Admin pour qu'il soit identique aux autres liens */
 .hover-effect {
     transition: transform 0.3s ease;
@@ -21,45 +11,34 @@ body * {
 .hover-effect:hover {
     transform: scale(1);
     transition: transform 0.3s ease;
- }
+}
 .site-header .site-description {
     font-weight: 600;
- }
+}
 .main-header-menu > .menu-item > .menu-link {
     justify-content: center;
- }
- /*
-#menu-item-30.btn-commande.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-30 a {
-    */
-#ast-hf-menu-1 #menu-item-237 .menu-header-menu-container {
+}
+/* Mise en forme du bouton Commander */
+#ast-hf-menu-1 #menu-item-237 {
     color:#ffffff;
- }
- /*
-#menu-item-30.btn-commande.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-30 {
-    */
+}
 #ast-hf-menu-1 #menu-item-237 {
     background-color: #DC9F96;
-    font-weight: 700;
+    font-weight: 600;
     width: 236px;
     height: 80px;
 }
-/*
-#menu-item-30.btn-commande.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-30:hover {
-    */
 #ast-hf-menu-1 #menu-item-237:hover {
     background-color: #C02E44;
- }
+}
 .site-primary-header-wrap.ast-builder-grid-row-container.site-header-focus-item.ast-container {
     padding-right: 0;
 }
-/*********************************************/
 
-
-/* Menu footer ********************************************/
+/* Menu footer ********************************/
 #astra-footer-menu .menu-item-200 {
     display: none;
 }
-
 
 /* Pas d'affichage des titres de page */
 .entry-title {
@@ -79,7 +58,7 @@ h2 {
    text-align: center;
    font-size: 30px;
    font-style: normal;
-   font-weight: 800;
+   font-weight: 700;
    line-height: normal;
    text-transform: uppercase;
 }
@@ -102,30 +81,18 @@ p {
     top: 0;
 }
 */
-/* Surcharge d'un style "bouton" sur le lien commande */
-/*
-.main-header-menu > li:last-child {
-    background-color: #e0b9b4;
-    transition: 0.45s ease;
-    width: 236px;
-    height: 80px;
-  }
-  */
 
-
-/*
-body {
-    width : 100%;
-    margin-top: 0;
-    }
-*/
-
-/* CSS pour page ACCUEIL *******************************************************/
+/* CSS pour page ACCUEIL **********************/
+.accueil {
+    padding-top: 60px;
+}
 .accueil-entete {
-    margin-top: -115px;
     background-color: #E3D9D0;
 }
-
+.accueil-entete img {
+    padding-top: 40px;
+}
+/* Gestion de l'arrondi */
 .accueil-arrondi{
     height: 60px;
     width: 100%;
@@ -133,46 +100,61 @@ body {
     border-radius: 0 0 80% 80%;
     box-shadow: 0 10px 0 #dcd5cf;
 }
-
+/* Partie Energie */
+.energie {
+    margin-top: 60px;
+}
 .energie-plante h2 {
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
     text-transform: none;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 50px;
-    padding-bottom: 30px;
 }
 .energie p {
-    /*
-    padding-left: 30px;
-    padding-right: 30px;
-    */
     text-align: center;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 20px;
 }
-/* Gouts ****************************/
-/*** Les GOUTS ***/
+/* Partie Gouts */
+.gouts {
+    padding-top: 40px;
+    background-color: #E3D9D0;
+}
 .gouts h2 {
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
-    text-transform: uppercase;
  }
+ .gouts p {
+    text-align: center;
+    padding-bottom: 30px;
+ }
+ .gouts-images {
+    background-color: #E3D9D0;
+ }
+ /* Gestion de l'arrondi */
+.gouts-arrondi{
+    height: 60px;
+    width: 100%;
+    background-color: #E3D9D0;
+    border-radius: 0 0 80% 80%;
+}
+/* Partie Avis */
+.avis {
+    padding-top: 40px;
+}
+.accueil-bas-page {
+    padding-top: 60px;
+}
+
  .wp-container-6,
  .wp-container-9 {
    width: 70%;
    margin: 50px auto;
  }
-/* Réglages communs pour les formulaires *******************************/
+/* Réglages communs pour les formulaires *********/
 /* Hauteur de ligne  */
 label {
     line-height: 2em;
 }
 
-/* CSS pour page COMMANDER *****************************************************/
+/* CSS pour page COMMANDER ***********************/
 .commander-background-color {
     background-color: #3B8E46;
 }
@@ -237,7 +219,7 @@ form.wpcf7-form textarea {
     background: #3B8E46;
 }
 
-/* CSS pour page RENCONTRER ***********************************/
+/* CSS pour page RENCONTRER *******************/
 .contact-header {
     margin-top: -135px;
 }
@@ -271,7 +253,7 @@ form.wpcf7-form textarea {
 
 
 
-/* Formulaire de contact *******************/
+/* Formulaire de contact ******/
 .contacter .wpcf7-form.init {
     width: 30%;
     display: flex;
@@ -324,7 +306,7 @@ form.wpcf7-form textarea {
     bottom: 19%;
     z-index: 0;
 }
-/******************************************************************/
+/* MEDIA QUERIES ******************************/
 
 
 
