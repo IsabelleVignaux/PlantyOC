@@ -1,28 +1,199 @@
+/* Import de la font Syne et application sur tous les éléments de la page */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+body * {
+    font-family: 'Syne', sans-serif;
+}
+/* Menu header ********************************************/
+/*
+#menu-header-menu #menu-item-257 a {
+    color:#f0f;
+  }
+#ast-hf-menu-1 #menu-item-238 a {
+    color:rgb(246, 255, 0);
+  }
+*/
+/**********************************************/
+/* Menu ***************************************/
+/* Effet hover sur lien Admin pour qu'il soit identique aux autres liens */
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+.hover-effect:hover {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+ }
+.site-header .site-description {
+    font-weight: 600;
+ }
+.main-header-menu > .menu-item > .menu-link {
+    justify-content: center;
+ }
+ /*
+#menu-item-30.btn-commande.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-30 a {
+    */
+#ast-hf-menu-1 #menu-item-237 .menu-header-menu-container {
+    color:#ffffff;
+ }
+ /*
+#menu-item-30.btn-commande.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-30 {
+    */
+#ast-hf-menu-1 #menu-item-237 {
+    background-color: #DC9F96;
+    font-weight: 700;
+    width: 236px;
+    height: 80px;
+}
+/*
+#menu-item-30.btn-commande.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-30:hover {
+    */
+#ast-hf-menu-1 #menu-item-237:hover {
+    background-color: #C02E44;
+ }
+.site-primary-header-wrap.ast-builder-grid-row-container.site-header-focus-item.ast-container {
+    padding-right: 0;
+}
+/*********************************************/
+
+
+/* Menu footer ********************************************/
+#astra-footer-menu .menu-item-200 {
+    display: none;
+}
+
+
+/* Pas d'affichage des titres de page */
+.entry-title {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800!important;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h2 {
+   text-align: center;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 800;
+   line-height: normal;
+   text-transform: uppercase;
+}
+
+p {
+    color: #000;
+    text-align: center;
+    font-family: 'Syne';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Réglages pour fixer le header */
+/*
+#site-header.sticky-top {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+*/
+/* Surcharge d'un style "bouton" sur le lien commande */
+/*
+.main-header-menu > li:last-child {
+    background-color: #e0b9b4;
+    transition: 0.45s ease;
+    width: 236px;
+    height: 80px;
+  }
+  */
+
+
+/*
 body {
     width : 100%;
     margin-top: 0;
     }
+*/
 
-/* CSS pour page ACCUEIL */
+/* CSS pour page ACCUEIL *******************************************************/
+.accueil-entete {
+    margin-top: -115px;
+    background-color: #E3D9D0;
+}
 
+.accueil-arrondi{
+    height: 60px;
+    width: 100%;
+    background-color: #E3D9D0;
+    border-radius: 0 0 80% 80%;
+    box-shadow: 0 10px 0 #dcd5cf;
+}
 
-/* CSS pour page COMMANDER */
+.energie-plante h2 {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    text-transform: none;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.energie p {
+    /*
+    padding-left: 30px;
+    padding-right: 30px;
+    */
+    text-align: center;
+}
+/* Gouts ****************************/
+/*** Les GOUTS ***/
+.gouts h2 {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+ }
+ .wp-container-6,
+ .wp-container-9 {
+   width: 70%;
+   margin: 50px auto;
+ }
+/* Réglages communs pour les formulaires *******************************/
+/* Hauteur de ligne  */
+label {
+    line-height: 2em;
+}
+
+/* CSS pour page COMMANDER *****************************************************/
 .commander-background-color {
     background-color: #3B8E46;
 }
-
 /* On fait disparaitre le bouton 'add to cart' */
 .button.single_add_to_cart_button.button.alt{
     display: none;
 }
-
-/* On ajoute une ligne de separation horizontale */
+/* Cadrage du champ de saisie quantity */
+.wp-block-add-to-cart-form {
+    position: relative;
+}
+.cart {
+    position: absolute;
+    left: 40%;
+}
+/* Ajoute d'une ligne de separation horizontale */
 .commander-border{
     color: white;
     padding-bottom: 30px;
     border-bottom: 2px solid;
 }
-
 /* Formulaire sur 2 colonnes */
 .formulaire-commande{
     background-color: #3B8E46;
@@ -48,8 +219,12 @@ body {
 }
 
 /* Ajout séparation blanche entre les 2 colonnes du formulaire */
+.col-gauche{
+    padding-right: 40px;
+    border-right: 2px solid #fff;
+}
+
 .col-droite{
-    border-left: 2px solid;
     padding-left: 30px;
 }
 
@@ -61,50 +236,98 @@ form.wpcf7-form textarea {
     border-radius: 30px;
     background: #3B8E46;
 }
-*/
 
-/* CSS pour page RENCONTRER */
-.rencontrer-background-color{
-    background-color: #e3d9d0;
+/* CSS pour page RENCONTRER ***********************************/
+.contact-header {
+    margin-top: -135px;
 }
-.rencontrer-background-1 {
-    background-color: #3B8E46;
+.contacter-bg {
+    background-color: #E3D9D0;
+}
+.contacter h1 {
+    padding-top: 60px;
+}
+.toto {
+    padding: 20, 80, 80, 20;
+}
+/* Fleur à déplacer dans l'en-tête */
+.plante-1 {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    z-index: 0;
 }
 
-.border-2{
+.contact-arrondi{
     height: 60px;
     width: 100%;
-    background-color: #E3D9D0;
     border-radius: 0 0 80% 80%;
+}
+/* L'équipe */
+.contacter h2 {
+    color: black;
+    padding-top: 30px;
+}
+
+
+
+/* Formulaire de contact *******************/
+.contacter .wpcf7-form.init {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+.contacter h2 {
+    text-transform: none;
+}
+/* Coins arrondis sur les champs de saisie */
+.contacter input[type=email],
+.contacter input[type=text],
+.contacter textarea {
     /*
-    box-shadow: 0 10px 0 #dcd5cf;
+    padding: 1.5em;
     */
+    border-radius: 7px;
 }
-.border-3 {
-    border-radius: 50% / 0% 0% 15% 15%;
+/* A VOIR XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.wpcf7 form>div, .wpcf7 form>p {
+    text-align: left;
+  }
+.contacter .content label {
+    padding-left: 0;
 }
-.border-4{
-    border-radius: 50% / 0% 0% 3% 3%;
-}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.contacter .wpcf7-form-control .wpcf7-submit.has-spinner .btn-primary {
+        /*
 
-.position{
-    position: relative;
-    max-width: 640px;
-}
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 55%;
+        */
 
-.rencontrer-background{
+}
+.contacter .wpcf7-form-control.wpcf7-submit.has-spinner.btn-primary {
+    /*
     position: absolute;
-    right: 53%;
-    bottom: 10%;
+    left: 20%;
+    bottom: 0;
+    */
+  }
+/* Plante no 3 à glisser sous le formulaire */
+.plante-3 {
+    position: absolute;
+    left: 29%;
+    bottom: 19%;
+    z-index: 0;
 }
-.formulaire-rencontrer{
-    background-color: #e3d9d0;
-    color: black;
-}
-.formulaire-rencontrer h3{
-    text-align: center;
-    color: black;
-}
+/******************************************************************/
+
+
+
 
 @media (max-width:560px){
     /* Page COMMANDER : 
@@ -114,3 +337,4 @@ form.wpcf7-form textarea {
         flex-direction: column;
     }
 }
+

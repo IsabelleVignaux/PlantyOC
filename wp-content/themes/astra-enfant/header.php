@@ -31,8 +31,14 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 <?php wp_head(); ?>
 <?php astra_head_bottom(); ?>
 </head>
-
+<?php
+/*
+wp_nav_menu(['theme_location'=> 'header']);
+*/
+?>
 <body <?php astra_schema_body(); ?> <?php body_class(); ?>>
+
+
 <?php astra_body_top(); ?>
 <?php wp_body_open(); ?>
 
@@ -67,8 +73,11 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 	<div id="content" class="site-content">
 		<div class="ast-container">
 		<?php astra_content_top(); ?>
+
+<!--  
 		<style>
 .single_add_to_cart_button{
     display: none;
 }
 </style>
+-->
