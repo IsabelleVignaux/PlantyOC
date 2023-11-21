@@ -111,14 +111,19 @@ p {
 }
 .gouts h2 {
     font-weight: 800;
- }
+}
  .gouts p {
     text-align: center;
     padding-bottom: 30px;
- }
+}
  .gouts-images {
     background-color: #E3D9D0;
- }
+}
+ .gouts-1 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
  /* Gestion de l'arrondi */
 .gouts-arrondi{
     height: 60px;
@@ -129,6 +134,10 @@ p {
 /* Partie Avis */
 .avis {
     padding-top: 40px;
+}
+.cadrage-avis {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .accueil-bas-page {
     padding-top: 60px;
@@ -144,6 +153,16 @@ label {
 .commander-background-color {
     background-color: #3B8E46;
 }
+.commander-header h1 {
+    padding-top: 30px;
+}
+.commander-header h2 {
+    padding-top: 20px;
+}
+.commander-header {
+    padding-left: 28%;
+    padding-right: 28%;
+}
 /* On fait disparaitre le bouton 'add to cart' */
 .button.single_add_to_cart_button.button.alt{
     display: none;
@@ -156,11 +175,17 @@ label {
     position: absolute;
     left: 40%;
 }
-/* Ajoute d'une ligne de separation horizontale */
+.commander h3 {
+    color: white;
+}
+/* Ajout d'une ligne de separation horizontale */
 .commander-border{
     color: white;
-    padding-bottom: 30px;
+    padding: 10px 10% 10px 10%;
     border-bottom: 2px solid;
+}
+.commander {
+    margin-bottom: 10px;
 }
 /* Formulaire sur 2 colonnes */
 .formulaire-commande{
@@ -185,6 +210,28 @@ label {
 #ligne-cf7{
     border-radius: 30px;
 }
+.commander .wpcf7-form.init {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+/* Coins arrondis sur les champs de saisie */
+.commander input[type=email],
+.commander input[type=text],
+.commander textarea {
+    border-radius: 7px;
+}
+.commander p {
+    color: white;
+    text-align: left;
+}
+.commander input[type=submit] {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 95%;
+}
 
 /* Ajout séparation blanche entre les 2 colonnes du formulaire */
 .col-gauche{
@@ -194,15 +241,6 @@ label {
 
 .col-droite{
     padding-left: 30px;
-}
-
-/*
-form.wpcf7-form input,
-form.wpcf7-form select,
-form.wpcf7-form textarea {
-    border: 1px solid #ececed;
-    border-radius: 30px;
-    background: #3B8E46;
 }
 
 /* CSS pour page RENCONTRER *******************/
@@ -276,12 +314,67 @@ form.wpcf7-form textarea {
 }
 
 /* MEDIA QUERIES ******************************/
-@media (max-width:560px){
+@media (max-width:1024px){
+    /* On fait disparaitre les plantes */
+    .plante-1{
+        display: none;
+    }
+    .plante-2{
+        display: none;
+    }   
+     .plante-3{
+        display: none;
+    }
+}
+
+@media (max-width:1110px){
+    .commander-header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:776px){
+    .commander-header h1 {
+        font-size: 25px;
+    }
     /* Page COMMANDER : 
     on remet le formulaire en colonnes
     pour les smartphones */
     .formulaire-2-col{
         flex-direction: column;
     }
+    .col-gauche{
+        border-right: 2px solid #3B8E46;
+        padding-right: 0px;
+    }
+    .col-droite{
+        padding-left: 0px;
+    }
 }
 
+@media (max-width:700px){
+    .commander-header h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:510px){
+    .commander-header h1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:390px){
+    .commander-header h1 {
+        font-size: 10px;
+    }
+    .contact h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:330px){
+    .contact h1 {
+        font-size: 18px;
+    }
+}

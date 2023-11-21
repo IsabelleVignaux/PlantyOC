@@ -10,19 +10,13 @@ function theme_enqueue_styles() {
 /* Ajout emplacement menu */
 register_nav_menu("header","En-tête menu");
 
-/* Ajout hook pour gérer le lien Admin */
-/*
-function add_admin( $items, $args ) {
-    if (is_user_logged_in() && $args->theme_location == 'header') {
-        $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
-    }
-    return $items;
-}
-add_filter( 'wp_nav_menu_items','add_admin', 10, 2 );
+/* Ajout hook pour gérer le lien Admin quand l'utilisateur 
+   est connecté
+   Récupération de la liste des items du menu actuel et
+   on insère le lien Admin à la bonne position dans le tableau
 */
 function add_admin($items) {
 if (is_user_logged_in()) {
-
     $new_links = array();
     $admin_item = array(
         'title'            => "Admin",
